@@ -1,19 +1,25 @@
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+/* Theme style (colors & sizes) */
+@import "theme-default";
 
-// Variables
-@import "variables";
-$fa-font-path: "../webfonts";
+/* Core Libs & Lib configs */
+@import "libs/all";
 
-// Bootstrap
-@import "~bootstrap/scss/bootstrap";
-@import "~admin-lte/dist/css/adminlte.css";
+/* Mixins */
+@import "mixins";
 
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+/* Theme components */
+@import "nav-bar";
+@import "aside";
+@import "title-bar";
+@import "hero-bar";
+@import "card";
+@import "table";
+@import "tiles";
+@import "form";
+@import "main-section";
+@import "modal";
+@import "footer";
+@import "misc";
 
-.router-link-exact-active {
-    background-color: #3f51b5 !important;
-    color: #fff !important;
-}
+/* Animate.css custom build (just selected animations to minimize bundle size) */
+//@import "../css/animate.min.css";
